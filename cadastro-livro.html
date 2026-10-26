@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Livro</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <header>
+                <h2>CADASTRO DE REFERÊNCIA BIBLIOGRÁFICA</h2>
+                <p>Cadastre os livros recomendados para as disciplinas.</p>
+
+            </header>
+            <form action="/cadastro-livro.html" method="POST">
+                <fieldset>
+                    <legend>Informações da Obra</legend>
+                    <p>
+                        <label for="titulo do livro">Título do livro:</label>
+                        <input type="text" id="titulo do livro" name="titulo" required>
+                    </p>
+                    <p>
+                        <label for="autor">Autor(es):</label>
+                        <input type="text" id="autor" name="autor" required>
+                    </p>
+
+                    <p>
+                        <label for="isbn">ISBN(13 dígitos):</label>
+                        <input type="text" id="isbn" name="isbn" placeholder="13 dígitos" required>
+                    </p>
+                    <p>
+                        <label for="ano">Ano de publicação:</label>
+                        <input type="text" id="ano" name="ano" placeholder="ex:2026" title="ex:2026" required>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Dados da Disciplina</legend>
+                    <p>
+                        <label for="disciplina">Curso Alvo:</label>
+                        <select id="disciplina" name="disciplina" required>
+                            <option value="Ciência da Computação">ADS</option>
+                            <option value="Engenharia de Software">Engenharia de Software</option>
+                            <option value="Sistemas de Informação">Sistemas de Informação</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="Disciplina">Disciplina:</label>
+                        <select id="Disciplina" name="Disciplina" required>
+                            <option value="programação web I">programação web I</option>
+                            <option value="arquitetura de computadores">arquitetura de computadores</option>
+                            <option value="projeto integrador I">projeto integrador I</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="formato">Formato:</label>
+                        <select id="formato" name="formato" required>
+                            <option value="Fisico">Físico</option>
+                            <option value="Digital">Digital</option>
+                            <option value="Ambos">Ambos</option>
+                        </select>
+                    </p>
+                </fieldset>
+                <button type="submit">Salvar Livro</button>
+            </form>
+        </section>
+    </main>
+
+
+
+</body>
+
+</html>
